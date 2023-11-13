@@ -1,1 +1,1 @@
-# Symulation
+This code is pretty old. I wrote it about 9 years ago. Anyone who is interested in flow system simulation, e.g. Flowmaster,NASA GFSSP, please contact me.
