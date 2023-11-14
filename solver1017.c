@@ -18,11 +18,18 @@
 #include<time.h>
 #include<math.h>
 #include"data_structure.h"
+#ifdef _WIN32
 #include"..\\_fluid_air\\property_calculation.c"
-#include"flow_thermal_coeffs.c"
-#include"cor_coeff_cal.c"
 #include"..\\_fluid_steam\\steam_property_calc.c"
 #include"..\\_fluid_water\\water_property.c"
+#else
+#include"../_fluid_air/property_calculation.c"
+#include"../_fluid_steam/steam_property_calc.c"
+#include"../_fluid_water/water_property.c"
+#endif
+#include"flow_thermal_coeffs.c"
+#include"cor_coeff_cal.c"
+
 
 void welcome(FILE* output_console)
 {
